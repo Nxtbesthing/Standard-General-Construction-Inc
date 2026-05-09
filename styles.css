@@ -203,7 +203,6 @@ select {
 .btn:hover {
   transform: translateY(-2px);
 }
-}
 
 .btn:hover,
 .btn:focus-visible {
@@ -963,3 +962,4 @@ select {
   .whatsapp-float {
     right: 1rem;
   }
+}
