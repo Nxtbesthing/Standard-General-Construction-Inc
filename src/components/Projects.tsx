@@ -2,22 +2,22 @@ const projects = [
   {
     title: 'City Commercial Hub',
     description: 'Large-scale mixed-use building designed for corporate and retail tenants.',
-    image: 'https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://lh3.googleusercontent.com/p/AF1QipMZFoexdcn3E30__tOE_fuNXEocsr8UQc8sXI90=s686-k-no',
   },
   {
-    title: 'Industrial Roadway Expansion',
+    title: 'Roadway Construction Driveways',
     description: 'Major road upgrade with modern paving, drainage, and safety systems.',
-    image: 'https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://lh3.googleusercontent.com/p/AF1QipP2281K1RJsgCZiVnBU9dhU22URmCtGVELOUIdq=w203-h152-k-no,
   },
   {
     title: 'Urban Renovation Project',
     description: 'High-end renovation transforming an older structure into a premium office space.',
-    image: 'https://images.unsplash.com/photo-1514149765006-1f1402e0fdea?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://lh3.googleusercontent.com/p/AF1QipO6KmyqOQWHYvp_9ZS1-HcmA3mA_uGHTjdnsWQs=s3072-v1',
   },
   {
     title: 'Engineering Infrastructure',
     description: 'Civil engineering and foundation work for a strategic campus expansion.',
-    image: 'https://images.unsplash.com/photo-1529429617124-0c7cd3c5aa2b?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://lh3.googleusercontent.com/p/AF1QipNkVoK0-DVoKekbH5ER7hfD8yd7ncKATI-2rBhz=s1024-v1',
   },
 ]
 
