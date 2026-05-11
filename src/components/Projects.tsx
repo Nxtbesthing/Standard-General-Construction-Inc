@@ -7,7 +7,7 @@ const projects = [
   {
     title: 'Roadway Construction Driveways',
     description: 'Major road upgrade with modern paving, drainage, and safety systems.',
-    image: 'https://lh3.googleusercontent.com/p/AF1QipP2281K1RJsgCZiVnBU9dhU22URmCtGVELOUIdq=w203-h152-k-no,
+    image: 'https://lh3.googleusercontent.com/p/AF1QipP2281K1RJsgCZiVnBU9dhU22URmCtGVELOUIdq=w203-h152-k-no',
   },
   {
     title: 'Urban Renovation Project',
