@@ -9,8 +9,8 @@ const Footer = () => {
           </div>
           <div>
             <p className="text-sm uppercase tracking-[0.24em] text-slate-500">Contact</p>
-            <p className="mt-4">123 Construction Ave, Build City, BC</p>
-            <p className="mt-2">(555) 123-4567</p>
+            <p className="mt-4">1186 Lakewood Pl, Bronx, NY 10461, United States</p>
+            <p className="mt-2">+19173102100</p>
             <p className="mt-2">info@standardgeneralconstruction.com</p>
           </div>
           <div>
