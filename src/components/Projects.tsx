@@ -1,23 +1,28 @@
+import project1 from '../assets/images/project 1.jpg';
+import project2 from '../assets/images/project 2.jpg';
+import project3 from '../assets/images/project 3.jpg';
+import project4 from '../assets/images/project 4.jpg';
+
 const projects = [
   {
     title: 'City Commercial Hub',
     description: 'Large-scale mixed-use building designed for corporate and retail tenants.',
-    image: 'https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80',
+    image: project1,
   },
   {
     title: 'Industrial Roadway Expansion',
     description: 'Major road upgrade with modern paving, drainage, and safety systems.',
-    image: 'https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=1200&q=80',
+    image: project2,
   },
   {
     title: 'Urban Renovation Project',
     description: 'High-end renovation transforming an older structure into a premium office space.',
-    image: 'https://images.unsplash.com/photo-1514149765006-1f1402e0fdea?auto=format&fit=crop&w=1200&q=80',
+    image: project3,
   },
   {
     title: 'Engineering Infrastructure',
     description: 'Civil engineering and foundation work for a strategic campus expansion.',
-    image: 'https://images.unsplash.com/photo-1529429617124-0c7cd3c5aa2b?auto=format&fit=crop&w=1200&q=80',
+    image: project4,
   },
 ]
 
