@@ -5,7 +5,7 @@ const projects = [
     image: 'https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80',
   },
   {
-    title: 'Industrial Roadway Expansion',
+    title: 'Roadway Construction Driveways',
     description: 'Major road upgrade with modern paving, drainage, and safety systems.',
     image: 'https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=1200&q=80',
   },
