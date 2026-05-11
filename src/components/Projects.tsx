@@ -13,7 +13,7 @@ const projects = [
     title: 'Urban Renovation Project',
     description: 'High-end renovation transforming an older structure into a premium office space.',
     image: 'https://lh3.googleusercontent.com/p/AF1QipO6KmyqOQWHYvp_9ZS1-HcmA3mA_uGHTjdnsWQs=s3072-v1',
-  },
+  
   {
     title: 'Engineering Infrastructure',
     description: 'Civil engineering and foundation work for a strategic campus expansion.',
