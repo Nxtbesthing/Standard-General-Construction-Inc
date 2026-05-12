@@ -35,7 +35,7 @@ const Navbar = () => {
             type="button"
             className="md:hidden inline-flex items-center justify-center w-11 h-11 rounded-full bg-slate-900/80 border border-slate-700 text-slate-200 hover:border-orange-400 hover:text-white transition-all duration-200"
             aria-label="Toggle navigation"
-            onClick={() => setMenuOpen((value) => !value)}
+            onClick={() => setMenuOpen((value: boolean) => !value)}
           >
             <span className="sr-only">Menu</span>
             <div className="space-y-1.5">
