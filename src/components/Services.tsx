@@ -1,9 +1,8 @@
-import type { ReactNode } from 'react'
 
 interface ServiceItem {
   title: string
   description: string
-  icon: ReactNode
+  icon: JSX.Element
 }
 
 const services: ServiceItem[] = [
