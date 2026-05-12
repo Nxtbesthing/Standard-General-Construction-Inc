@@ -10,8 +10,8 @@ const projects = [
     image: project1,
   },
   {
-    title: 'Industrial Roadway Expansion',
-    description: 'Major road upgrade with modern paving, drainage, and safety systems.',
+    title: 'Home Renovation project',
+    description: 'Major renovation project transforming a traditional home into a modern living space.',
     image: project2,
   },
   {
