@@ -5,7 +5,7 @@ import project4 from '../assets/images/project 4.jpg';
 
 const projects = [
   {
-    title: 'hotel project',
+    title: 'city commercial Hub',
     description: 'Large-scale mixed-use building designed for corporate and retail tenants.',
     image: project1,
   },
