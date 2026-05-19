@@ -20,6 +20,14 @@ const Footer = () => {
               <a href="#projects" className="block hover:text-white transition-colors duration-200">Projects</a>
               <a href="#about" className="block hover:text-white transition-colors duration-200">About</a>
               <a href="#contact" className="block hover:text-white transition-colors duration-200">Contact</a>
+              <a
+  href="https://maps.google.com/?q=Standard+General+Constrution+Inc,+1186+Lakewood+PL,+Bronx,+NY+10461,+United+States"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-yellow-500 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition"
+>
+  Find Us on Google Maps
+</a>
             </div>
           </div>
         </div>
