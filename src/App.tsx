@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import Intro from './components/Intro'
 import Services from './components/Services'
 import Projects from './components/Projects'
+import ProjectsGallery from './components/ProjectsGallery'
 import CTASection from './components/CTASection'
 import Footer from './components/Footer'
 
@@ -16,6 +17,7 @@ function App() {
         <Intro />
         <Services />
         <Projects />
+        <ProjectsGallery />
         <CTASection />
         <Footer />
       </main>
