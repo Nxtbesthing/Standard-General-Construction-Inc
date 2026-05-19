@@ -11,7 +11,7 @@ const Footer = () => {
             <p className="text-sm uppercase tracking-[0.24em] text-slate-500">Contact</p>
             <p className="mt-4">1186 Lakewood Pl, Bronx, NY 10461, United States</p>
             <p className="mt-2">+19173102100</p>
-            <p className="mt-2">info@standardgeneralconstruction.com</p>
+            <p className="mt-2">info@standard-general-construction.com</p>
           </div>
           <div>
             <p className="text-sm uppercase tracking-[0.24em] text-slate-500">Quick links</p>
