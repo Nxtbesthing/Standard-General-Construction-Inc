@@ -10,7 +10,7 @@ const projects = [
     image: 'https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=1200&q=80',
   },
   {
-    title: 'Urban Renovation Project',
+    title: 'daniella',
     description: 'High-end renovation transforming an older structure into a premium office space.',
     image: 'https://images.unsplash.com/photo-1514149765006-1f1402e0fdea?auto=format&fit=crop&w=1200&q=80',
   },
