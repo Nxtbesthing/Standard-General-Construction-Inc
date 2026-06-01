@@ -5,6 +5,7 @@ import Intro from './components/Intro'
 import Services from './components/Services'
 import Projects from './components/Projects'
 import ProjectsGallery from './components/ProjectsGallery'
+import AboutSection from './components/AboutSection'
 import CTASection from './components/CTASection'
 import Footer from './components/Footer'
 
@@ -15,6 +16,7 @@ function App() {
       <main className="overflow-hidden">
         <Hero />
         <Intro />
+        <AboutSection />
         <Services />
         <Projects />
         <ProjectsGallery />
