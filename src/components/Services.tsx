@@ -77,17 +77,47 @@ const services: ServiceItem[] = [
   },
 ]
 
-const PixelArt = ({ pattern, color }: { pattern: number[]; color: string }) => {
+const WorkIllustration = ({ variant }: { variant: 'helmet' | 'mixer' | 'blocks' }) => {
+  const illustrations: Record<string, JSX.Element> = {
+    helmet: (
+      <svg viewBox="0 0 160 160" className="h-full w-full" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M29 86c0-31 26-56 58-56s58 25 58 56v15H29V86Z" fill="#FBBF24" />
+        <path d="M32 101h114v8H32v-8Z" fill="#F59E0B" />
+        <path d="M42 78c0-14 12-25 26-25s26 11 26 25v7H42v-7Z" fill="#F59E0B" />
+        <path d="M50 50c0-12 10-22 22-22s22 10 22 22" stroke="#1F2937" strokeWidth="6" strokeLinecap="round" />
+        <path d="M73 70v20" stroke="#1F2937" strokeWidth="6" strokeLinecap="round" />
+      </svg>
+    ),
+    mixer: (
+      <svg viewBox="0 0 160 160" className="h-full w-full" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M34 86h92v42H34V86Z" fill="#E5E7EB" />
+        <path d="M46 86L70 48h20l24 38" stroke="#1F2937" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M60 92h40" stroke="#1F2937" strokeWidth="6" strokeLinecap="round" />
+        <path d="M36 126h96" stroke="#1F2937" strokeWidth="8" strokeLinecap="round" />
+        <circle cx="54" cy="132" r="8" fill="#111827" />
+        <circle cx="106" cy="132" r="8" fill="#111827" />
+        <path d="M55 40h50" stroke="#FBBF24" strokeWidth="10" strokeLinecap="round" />
+      </svg>
+    ),
+    blocks: (
+      <svg viewBox="0 0 160 160" className="h-full w-full" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="28" y="56" width="44" height="30" rx="6" fill="#F97316" />
+        <rect x="88" y="56" width="44" height="30" rx="6" fill="#FB923C" />
+        <rect x="28" y="96" width="44" height="30" rx="6" fill="#F59E0B" />
+        <rect x="88" y="96" width="44" height="30" rx="6" fill="#FBBF24" />
+        <path d="M28 56h44" stroke="#111827" strokeWidth="4" />
+        <path d="M88 56h44" stroke="#111827" strokeWidth="4" />
+        <path d="M28 86h44" stroke="#111827" strokeWidth="4" />
+        <path d="M88 86h44" stroke="#111827" strokeWidth="4" />
+        <path d="M28 96h44" stroke="#111827" strokeWidth="4" />
+        <path d="M88 96h44" stroke="#111827" strokeWidth="4" />
+      </svg>
+    ),
+  }
+
   return (
-    <div className="rounded-3xl border border-slate-700 bg-slate-950 p-3 shadow-lg">
-      <div className="grid grid-cols-6 gap-[2px]">
-        {Array.from({ length: 36 }, (_, index) => (
-          <span
-            key={index}
-            className={`block h-4 w-4 ${pattern.includes(index) ? color : 'bg-slate-900'}`}
-          />
-        ))}
-      </div>
+    <div className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-lg">
+      <div className="h-40 w-full">{illustrations[variant]}</div>
     </div>
   )
 }
@@ -123,29 +153,22 @@ const Services = () => {
             <div className="space-y-6">
               <div className="grid gap-4 sm:grid-cols-2">
                 <div className="space-y-3">
-                  <h3 className="text-xl font-semibold">Pixelized work items</h3>
-                  <p className="text-slate-300">A visual nod to our craft, with icons that echo the tools and gear behind every build.</p>
+                  <h3 className="text-xl font-semibold">Work item illustrations</h3>
+                  <p className="text-slate-300">A polished set of construction visuals representing the tools that power our projects.</p>
                 </div>
                 <div className="grid grid-cols-2 gap-4">
-                  <PixelArt
-                    color="bg-orange-400"
-                    pattern={[8, 9, 10, 11, 14, 15, 16, 17, 18, 20, 22, 23, 25, 26]}
-                  />
-                  <PixelArt
-                    color="bg-slate-300"
-                    pattern={[19, 20, 21, 22, 26, 27, 28, 32, 33, 34, 35, 29, 30]}
-                  />
+                  <WorkIllustration variant="helmet" />
+                  <WorkIllustration variant="mixer" />
                 </div>
               </div>
               <div className="grid gap-4 sm:grid-cols-2">
-                <PixelArt
-                  color="bg-amber-400"
-                  pattern={[7, 8, 9, 13, 14, 15, 17, 18, 19, 23, 24, 25, 29, 30]}
-                />
-                <PixelArt
-                  color="bg-cyan-400"
-                  pattern={[2, 3, 4, 8, 9, 14, 15, 20, 21, 26, 27, 32, 33, 34, 35]}
-                />
+                <WorkIllustration variant="blocks" />
+                <div className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-lg">
+                  <div className="space-y-4 text-slate-950">
+                    <h4 className="text-xl font-semibold">Built for the job</h4>
+                    <p className="text-slate-600">These illustrations show the core equipment and materials we use on every project: safety gear, mixers, and modular building blocks.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
