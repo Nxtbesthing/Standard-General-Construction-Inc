@@ -8,7 +8,7 @@ interface ServiceItem {
 const services: ServiceItem[] = [
   {
     title: 'Building Construction',
-    description: 'Full-service building construction for offices, warehouses, residential towers, and mixed-use developments.',
+    description: 'Turn concept into landmark structures with precision engineering, premium materials, and expert site supervision.',
     icon: (
       <svg viewBox="0 0 24 24" className="h-8 w-8" fill="none" stroke="currentColor" strokeWidth="1.8">
         <path d="M4 21V8l8-5 8 5v13H4Z" />
@@ -18,32 +18,31 @@ const services: ServiceItem[] = [
     ),
   },
   {
-    title: 'Road Construction',
-    description: 'Durable roadways and infrastructure with precision grading, paving, and civil site work.',
+    title: 'Residential Projects',
+    description: 'Custom homes and multifamily projects designed to balance comfort, functionality, and long-term performance.',
     icon: (
       <svg viewBox="0 0 24 24" className="h-8 w-8" fill="none" stroke="currentColor" strokeWidth="1.8">
-        <path d="M3 16h18" />
-        <path d="M7 8h10" />
-        <path d="M12 3v18" />
-        <path d="M4 21h16" />
+        <path d="M4 12l8-8 8 8" />
+        <path d="M4 12v8h16v-8" />
+        <path d="M9 21v-6h6v6" />
       </svg>
     ),
   },
   {
-    title: 'Civil Engineering',
-    description: 'Complete civil engineering services that keep projects structurally sound, safe, and future-ready.',
+    title: 'Commercial Construction',
+    description: 'Retail, office, and industrial space delivered with clean execution, code compliance, and operational readiness.',
     icon: (
       <svg viewBox="0 0 24 24" className="h-8 w-8" fill="none" stroke="currentColor" strokeWidth="1.8">
-        <path d="M4 20h16" />
-        <path d="M8 16h8" />
-        <path d="M12 4v12" />
-        <path d="M7 8h10" />
+        <path d="M4 21h16V7H4v14Z" />
+        <path d="M4 7l8-4 8 4" />
+        <path d="M9 12h6" />
+        <path d="M9 16h6" />
       </svg>
     ),
   },
   {
-    title: 'Renovation',
-    description: 'Transformative renovation work with modern finishes, systems upgrades, and efficient scheduling.',
+    title: 'Renovation & Remodeling',
+    description: 'Refresh interiors, upgrade systems, and reimagine spaces with thoughtful renovation that respects budget and schedule.',
     icon: (
       <svg viewBox="0 0 24 24" className="h-8 w-8" fill="none" stroke="currentColor" strokeWidth="1.8">
         <path d="M4 14h16" />
@@ -54,7 +53,7 @@ const services: ServiceItem[] = [
   },
   {
     title: 'Project Management',
-    description: 'Expert planning, communication, and risk control to ensure every project meets scope, schedule, and budget.',
+    description: 'Clear planning, proactive coordination, and dependable communication from design through handover.',
     icon: (
       <svg viewBox="0 0 24 24" className="h-8 w-8" fill="none" stroke="currentColor" strokeWidth="1.8">
         <path d="M4 7h16" />
@@ -64,7 +63,34 @@ const services: ServiceItem[] = [
       </svg>
     ),
   },
+  {
+    title: 'Structural Works',
+    description: 'Foundations, framing, and load-bearing systems engineered to support every stage of construction with safety and strength.',
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-8 w-8" fill="none" stroke="currentColor" strokeWidth="1.8">
+        <path d="M4 20h16" />
+        <path d="M8 16h8" />
+        <path d="M12 4v12" />
+        <path d="M7 8h10" />
+      </svg>
+    ),
+  },
 ]
+
+const PixelArt = ({ pattern, color }: { pattern: number[]; color: string }) => {
+  return (
+    <div className="rounded-3xl border border-slate-700 bg-slate-950 p-3 shadow-lg">
+      <div className="grid grid-cols-6 gap-[2px]">
+        {Array.from({ length: 36 }, (_, index) => (
+          <span
+            key={index}
+            className={`block h-4 w-4 ${pattern.includes(index) ? color : 'bg-slate-900'}`}
+          />
+        ))}
+      </div>
+    </div>
+  )
+}
 
 const Services = () => {
   return (
@@ -74,6 +100,55 @@ const Services = () => {
           <p className="text-sm uppercase tracking-[0.28em] text-orange-500">What we do</p>
           <h2 className="mt-4 text-3xl sm:text-4xl font-bold text-slate-950">Industry leading services for complex construction needs.</h2>
           <p className="mt-4 text-slate-600 max-w-2xl mx-auto">From infrastructure and civil works to renovation and integrated project management, we deliver smart, reliable solutions.</p>
+        </div>
+
+        <div className="grid gap-10 lg:grid-cols-[1.4fr_1fr] items-start mb-12">
+          <div className="space-y-6 rounded-[2rem] border border-slate-200 bg-slate-50 p-10 shadow-sm">
+            <p className="text-lg leading-8 text-slate-600">
+              Our services are designed to cover every stage of construction, from strategic planning and permitting to on-site execution and final delivery. We blend practical craftsmanship with thoughtful design to create projects that look strong, feel functional, and stand the test of time.
+            </p>
+            <div className="grid gap-4 sm:grid-cols-2">
+              <div className="rounded-3xl bg-white p-6 shadow-sm">
+                <h3 className="text-xl font-semibold text-slate-950">Creativity in construction</h3>
+                <p className="mt-3 text-slate-600">We build with intention, using smart workflows, innovative techniques, and responsive planning to deliver real value.</p>
+              </div>
+              <div className="rounded-3xl bg-white p-6 shadow-sm">
+                <h3 className="text-xl font-semibold text-slate-950">Hands-on reliability</h3>
+                <p className="mt-3 text-slate-600">Every project is supported by skilled teams, disciplined safety protocols, and strict quality control.</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="rounded-[2rem] border border-slate-200 bg-slate-950 p-8 shadow-2xl text-white">
+            <div className="space-y-6">
+              <div className="grid gap-4 sm:grid-cols-2">
+                <div className="space-y-3">
+                  <h3 className="text-xl font-semibold">Pixelized work items</h3>
+                  <p className="text-slate-300">A visual nod to our craft, with icons that echo the tools and gear behind every build.</p>
+                </div>
+                <div className="grid grid-cols-2 gap-4">
+                  <PixelArt
+                    color="bg-orange-400"
+                    pattern={[8, 9, 10, 11, 14, 15, 16, 17, 18, 20, 22, 23, 25, 26]}
+                  />
+                  <PixelArt
+                    color="bg-slate-300"
+                    pattern={[19, 20, 21, 22, 26, 27, 28, 32, 33, 34, 35, 29, 30]}
+                  />
+                </div>
+              </div>
+              <div className="grid gap-4 sm:grid-cols-2">
+                <PixelArt
+                  color="bg-amber-400"
+                  pattern={[7, 8, 9, 13, 14, 15, 17, 18, 19, 23, 24, 25, 29, 30]}
+                />
+                <PixelArt
+                  color="bg-cyan-400"
+                  pattern={[2, 3, 4, 8, 9, 14, 15, 20, 21, 26, 27, 32, 33, 34, 35]}
+                />
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
