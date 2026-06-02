@@ -77,37 +77,47 @@ const services: ServiceItem[] = [
   },
 ]
 
-const WorkIllustration = ({ variant }: { variant: 'helmet' | 'mixer' | 'shovel' }) => {
+const WorkIllustration = ({ variant }: { variant: 'helmet' | 'mixer' | 'blocks' }) => {
   const illustrations: Record<string, JSX.Element> = {
     helmet: (
-      <img
-        src="https://images.unsplash.com/photo-1516542076529-1ea3854896f8?auto=format&fit=crop&w=900&q=80"
-        alt="Construction helmet on a site"
-        className="h-full w-full rounded-3xl object-cover"
-        loading="lazy"
-      />
+      <svg viewBox="0 0 160 160" className="h-full w-full" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M29 86c0-31 26-56 58-56s58 25 58 56v15H29V86Z" fill="#FBBF24" />
+        <path d="M32 101h114v8H32v-8Z" fill="#F59E0B" />
+        <path d="M42 78c0-14 12-25 26-25s26 11 26 25v7H42v-7Z" fill="#F59E0B" />
+        <path d="M50 50c0-12 10-22 22-22s22 10 22 22" stroke="#1F2937" strokeWidth="6" strokeLinecap="round" />
+        <path d="M73 70v20" stroke="#1F2937" strokeWidth="6" strokeLinecap="round" />
+      </svg>
     ),
     mixer: (
-      <img
-        src="https://images.unsplash.com/photo-1545191594-9f44d06052ab?auto=format&fit=crop&w=900&q=80"
-        alt="Concrete mixer truck at a construction site"
-        className="h-full w-full rounded-3xl object-cover"
-        loading="lazy"
-      />
+      <svg viewBox="0 0 160 160" className="h-full w-full" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M34 86h92v42H34V86Z" fill="#E5E7EB" />
+        <path d="M46 86L70 48h20l24 38" stroke="#1F2937" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M60 92h40" stroke="#1F2937" strokeWidth="6" strokeLinecap="round" />
+        <path d="M36 126h96" stroke="#1F2937" strokeWidth="8" strokeLinecap="round" />
+        <circle cx="54" cy="132" r="8" fill="#111827" />
+        <circle cx="106" cy="132" r="8" fill="#111827" />
+        <path d="M55 40h50" stroke="#FBBF24" strokeWidth="10" strokeLinecap="round" />
+      </svg>
     ),
-    shovel: (
-      <img
-        src="https://images.unsplash.com/photo-1518085250887-5af0d7bb03a4?auto=format&fit=crop&w=900&q=80"
-        alt="Shovel and construction materials"
-        className="h-full w-full rounded-3xl object-cover"
-        loading="lazy"
-      />
+    blocks: (
+      <svg viewBox="0 0 160 160" className="h-full w-full" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="28" y="56" width="44" height="30" rx="6" fill="#F97316" />
+        <rect x="88" y="56" width="44" height="30" rx="6" fill="#FB923C" />
+        <rect x="28" y="96" width="44" height="30" rx="6" fill="#F59E0B" />
+        <rect x="88" y="96" width="44" height="30" rx="6" fill="#FBBF24" />
+        <path d="M28 56h44" stroke="#111827" strokeWidth="4" />
+        <path d="M88 56h44" stroke="#111827" strokeWidth="4" />
+        <path d="M28 86h44" stroke="#111827" strokeWidth="4" />
+        <path d="M88 86h44" stroke="#111827" strokeWidth="4" />
+        <path d="M28 96h44" stroke="#111827" strokeWidth="4" />
+        <path d="M88 96h44" stroke="#111827" strokeWidth="4" />
+      </svg>
     ),
   }
 
   return (
     <div className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-lg">
-      <div className="h-40 w-full overflow-hidden">{illustrations[variant]}</div>
+      <div className="h-40 w-full">{illustrations[variant]}</div>
     </div>
   )
 }
@@ -152,11 +162,11 @@ const Services = () => {
                 </div>
               </div>
               <div className="grid gap-4 sm:grid-cols-2">
-                <WorkIllustration variant="shovel" />
+                <WorkIllustration variant="blocks" />
                 <div className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-lg">
                   <div className="space-y-4 text-slate-950">
                     <h4 className="text-xl font-semibold">Built for the job</h4>
-                    <p className="text-slate-600">These photos show the real equipment we rely on every day: safety gear, mixers, and hand tools for dependable on-site execution.</p>
+                    <p className="text-slate-600">These illustrations show the core equipment and materials we use on every project: safety gear, mixers, and modular building blocks.</p>
                   </div>
                 </div>
               </div>
