@@ -47,11 +47,15 @@ const defaultReviews: Review[] = [
 const STORAGE_KEY = 'sgci-client-reviews'
 
 const starDisplay = (rating: number) => {
-  return Array.from({ length: 5 }, (_, index) => (
-    <span key={index} className="text-orange-500">
-      {index < rating ? '★' : '☆'}
-    </span>
-  ))
+  const stars: JSX.Element[] = []
+  for (let index = 0; index < 5; index += 1) {
+    stars.push(
+      <span key={index} className="text-orange-500">
+        {index < rating ? '★' : '☆'}
+      </span>
+    )
+  }
+  return stars
 }
 
 const AboutSection = () => {
