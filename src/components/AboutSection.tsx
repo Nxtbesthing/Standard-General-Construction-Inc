@@ -1,4 +1,4 @@
-import { useEffect, useState, type FormEvent } from 'react'
+import React, { useEffect, useState } from 'react'
 
 type Review = {
   id: string
@@ -59,7 +59,7 @@ const starDisplay = (rating: number) => {
 }
 
 const AboutSection = () => {
-  const [reviews, setReviews] = useState<Review[]>(defaultReviews)
+  const [reviews, setReviews] = useState(defaultReviews)
   const [name, setName] = useState('')
   const [job, setJob] = useState('')
   const [comment, setComment] = useState('')
@@ -89,7 +89,7 @@ const AboutSection = () => {
   const totalReviews = reviews.length
   const averageRating = totalReviews > 0 ? reviews.reduce((sum: number, review: Review) => sum + review.rating, 0) / totalReviews : 0
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     setError('')
 
@@ -246,7 +246,7 @@ const AboutSection = () => {
           <div className="rounded-[2rem] border border-slate-200 bg-white p-10 shadow-sm">
             <h2 className="text-3xl font-bold text-slate-950">Latest client feedback</h2>
             <div className="mt-8 space-y-6 text-slate-600">
-              {reviews.slice(0, 5).map((review) => (
+              {reviews.slice(0, 5).map((review: Review) => (
                 <div key={review.id} className="rounded-3xl bg-slate-50 p-6">
                   <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
                     <div>
