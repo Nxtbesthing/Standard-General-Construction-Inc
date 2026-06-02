@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, type FormEvent } from 'react'
 
 type Review = {
   id: string
@@ -83,9 +83,9 @@ const AboutSection = () => {
   }, [reviews])
 
   const totalReviews = reviews.length
-  const averageRating = totalReviews > 0 ? reviews.reduce((sum, review) => sum + review.rating, 0) / totalReviews : 0
+  const averageRating = totalReviews > 0 ? reviews.reduce((sum: number, review: Review) => sum + review.rating, 0) / totalReviews : 0
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     setError('')
 
