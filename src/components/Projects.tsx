@@ -15,7 +15,7 @@ const projects = [
     image: project2,
   },
   {
-    title: 'Urban Renovation Project',
+    title: 'urban renovation project',
     description: 'High-end renovation transforming an older structure into a premium office space.',
     image: project3,
   },
